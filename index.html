@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>График обучения сотрудников</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <header>График обучения сотрудников</header>
+    <div class="container">
+        <div class="filter-section">
+            <div>
+                <label for="region">Регион:</label>
+                <select id="region">
+                    <option value="">Выберите регион</option>
+                </select>
+            </div>
+            <div>
+                <label for="district">Район:</label>
+                <select id="district">
+                    <option value="">Выберите район</option>
+                </select>
+            </div>
+            <div>
+                <label for="institution">Учреждение:</label>
+                <select id="institution">
+                    <option value="">Выберите учреждение</option>
+                </select>
+            </div>
+        </div>
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th>Учреждение</th>
+                    <th>Звено</th>
+                    <th>День</th>
+                    <th>Сеанс</th>
+                    <th>Ответственный</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5">Данные загружаются...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>&copy; 2024</footer>
+    <script src="script.js"></script>
+</body>
+</html>
